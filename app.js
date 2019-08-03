@@ -4,9 +4,9 @@ const express = require('express');
 const todoController = require('./controllers/todoController')
 
 const app = express();
-
+/*
 // Connect to the dabase
-//mongoose.connect('mongodb+srv://armandodc:010495a@myment-zclbd.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://armandodc:010495a@myment-zclbd.mongodb.net/test?retryWrites=true&w=majority')
 
 // Create a schema - this is like a blueprint
 /*const todoSchema = new mongoose.Schema({
@@ -16,6 +16,7 @@ const app = express();
 // Model
 const Todo = mongoose.model('Todo', todoSchema)
 */
+
 // Set up template engine
 app.set('view engine', 'ejs');
 

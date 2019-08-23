@@ -2,7 +2,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 // Connect to the dabase
-mongoose.connect('mongodb+srv://armandodc:010495a@myment-zclbd.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://armandodc:010495a@myment-zclbd.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true })
 
 // Create a schema
 const todoSchema = new mongoose.Schema({
